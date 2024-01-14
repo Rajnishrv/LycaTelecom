@@ -1,0 +1,249 @@
+/*CSS reset*/
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-size: 1.1rem;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*navbar*/
+.nevbar {
+    margin-top: 0px;
+    position: fixed;
+    display: flex;
+    background-color: white;
+    border: 2px solid rgb(255, 255, 255);
+    align-items: center;
+    justify-content: center;
+    z-index: 35;
+    width: 100vw;
+    box-shadow: 4px 0px 8px black;
+}
+
+.nevbar a {
+    text-decoration: none;
+    padding: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.nevbar a:hover {
+    color: #06b14f;
+    text-decoration: underline;
+}
+
+#licalogo {
+    width: 150px;
+}
+
+/* slider */
+.container {
+    padding-top: 3.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 59rem;
+    margin: 0 auto;
+    box-shadow: 1px 2px 8px 2px black;
+
+}
+
+.slider {
+
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img {
+
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opecity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+
+/* slider end */
+
+/* cards */
+.cards h1,
+a {
+    color: black;
+    font-family: 'Baloo 2', sans-serif;
+    font-family: 'Baloo Bhai 2', sans-serif;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    font-family: 'Salsa', cursive;
+}
+
+.card {
+    margin: 8px;
+}
+
+.card img {
+    width: 250px;
+    height: 285px;
+    border: 1px solid lack;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px black;
+}
+
+.cardcont {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards img:hover {
+    box-shadow: 3px 3px 6px black, -3px -3px 6px black;
+    border: 3px solid black;
+}
+
+#service {
+    color: #0061a0;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 2px 3px black;
+    font-family: 'Baloo 2', sans-serif;
+    font-family: 'Baloo Bhai 2', sans-serif;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    font-family: 'Salsa', cursive;
+}
+
+.cards p,
+h1 {
+    color: white;
+}
+
+/* Contact form */
+#map {
+    position: relative;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+.contact_form {
+    box-shadow: 1px 2px 8px 2px black;
+    background-color: #06b14f;
+    border: 2px solid black;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    padding: 8px;
+    margin-top: -300px;
+    margin-bottom: 50px;
+    z-index: 3;
+    width: 400px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Baloo 2', sans-serif;
+    font-family: 'Baloo Bhai 2', sans-serif;
+    font-family: 'Baloo Bhaijaan 2', sans-serif;
+    font-family: 'Salsa', cursive;
+}
+
+form input {
+    width: 90%;
+    margin: 5px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    color: black;
+}
+
+.button {
+    display: block;
+    margin: auto;
+    background: #0061a0;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.button:hover {
+    box-shadow: 1px 2px 8px 2px black;
+}
+
+/* footer */
+.footer {
+    position: relative;
+    padding: 10px;
+    z-index: 2;
+    background-color: #0061a0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 5px solid #06b14f;
+    text-align: center;
+}
+
+#footerp {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#copy {
+    text-align: center;
+    background-color:#06b14f;
+    display: block;
+}
+
+#copy p {
+    padding: 1px;
+    color: white;
+    font-size: 0.8rem;
+    text-shadow: 1px 2px 3px black;
+}
