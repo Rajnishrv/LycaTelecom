@@ -9,6 +9,6 @@ function sentEmail() {
              +"<br> Phone: " + document.getElementById("phone").value
              +"<br> Message: " + document.getElementById("message").value
     }).then(
-        message => alert("message send")
+        message => swal("Success", "We will contact you soon.")
     );
 };
