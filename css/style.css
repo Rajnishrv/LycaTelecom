@@ -3,7 +3,7 @@
     margin: 0px;
     padding: 0px;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     box-sizing: border-box;
     word-wrap: break-word;
 }
@@ -100,18 +100,12 @@ html {
 .slider-nav a:hover {
     opacity: 1;
 }
-
-
 /* slider end */
 
 /* cards */
 .cards h1,
 a {
     color: black;
-    font-family: 'Baloo 2', sans-serif;
-    font-family: 'Baloo Bhai 2', sans-serif;
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
-    font-family: 'Salsa', cursive;
 }
 
 .card {
@@ -152,10 +146,6 @@ a {
     text-align: center;
     font-weight: bold;
     text-shadow: 1px 2px 3px black;
-    font-family: 'Baloo 2', sans-serif;
-    font-family: 'Baloo Bhai 2', sans-serif;
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
-    font-family: 'Salsa', cursive;
 }
 
 .cards p,
@@ -189,10 +179,6 @@ h3 {
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Baloo 2', sans-serif;
-    font-family: 'Baloo Bhai 2', sans-serif;
-    font-family: 'Baloo Bhaijaan 2', sans-serif;
-    font-family: 'Salsa', cursive;
 }
 
 form input {
@@ -247,3 +233,4 @@ form input {
     font-size: 0.8rem;
     text-shadow: 1px 2px 3px black;
 }
+
