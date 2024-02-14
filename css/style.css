@@ -2,7 +2,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    color: white;
     font-size: 1.1rem;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -103,56 +102,87 @@ html {
 /* slider end */
 
 /* cards */
-.cards h1,
-a {
-    color: black;
-}
-
-.card {
-    margin: 8px;
-}
-
-.card img {
-    width: 250px;
-    height: 285px;
-    border: 1px solid lack;
-    border-radius: 5px;
-    box-shadow: 3px 3px 5px black;
-}
-
-.cardcont {
-    margin-top: 50px;
-    margin-bottom: 25px;
-    overflow: hidden;
-}
-
-.cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
-
-.cards img:hover {
-    box-shadow: 3px 3px 6px black, -3px -3px 6px black;
-    border: 3px solid black;
-}
-
-#service {
-    color: #0061a0;
+.cardcont h2{
+    margin-top: 55px;
     font-size: 40px;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 1px 2px 3px black;
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px black;
+}
+.headLine h1{
+    font-size: 25px;
+    text-decoration: underline;
+}
+.cardcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cards{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+.cImage{grid-area: image;}
+.p{grid-area: para;}
+.headLine{grid-area: head;}
+
+.card{
+    width: 90%;
+    display: grid;
+    /* grid-template-areas: 'image head head head'
+                        'image para para para'
+                        'image para para para'
+                        'image para para para'
+                        'image para para para'; */
+border: 3px solid black;
+border-radius: 10px;
+margin: 10px;
+padding: 10px;
+justify-items: center;
+
 }
 
-.cards p,
-h1 {
-    color: white;
+
+.cImage img{
+  width:200px;
+}
+.card:nth-child(even){
+background-color: rgba(118, 240, 116, 0.147);
+grid-template-areas: ' head head head head'
+                    ' para para para image'
+                    ' para para para image'
+                    ' para para para image'
+                    ' para para para image';
+position: relative;
+animation-name: slideC;
+animation-duration: 2s;
+animation-fill-mode: forwards;
 }
 
+@keyframes slideC {
+    0%{left: -1000px;}
+    100%{left: 0;}   
+}
+.card:nth-child(odd){
+    background-color: rgba(91, 147, 245, 0.147);
+    grid-template-areas: 'head head head head'
+                        'image para para para'
+                        'image para para para'
+                        'image para para para'
+                        'image para para para';
+
+position: relative;
+animation-name: slideD;
+animation-duration: 2s;
+animation-fill-mode: forwards;
+}
+
+@keyframes slideD {
+    0%{right: -1000px;}
+    100%{right: 0;}   
+}
 /* Contact form */
 #map {
     position: relative;
