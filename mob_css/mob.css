@@ -15,4 +15,17 @@
     #licalogo{
         width: 110px;
     }
-  
+
+    .card{
+        font-size: 15px;
+  width: 98%;
+    margin: 5px;
+    padding: 7px;    
+    }
+
+    .cardcont h2{
+        margin-top: 35px;
+        font-size: 35px;
+        text-decoration: underline;
+        text-shadow: 1px 1px 2px black;
+    }
